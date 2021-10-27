@@ -1,11 +1,9 @@
-/**********************************************************************************************
+/*********************************************************************************************
  * Emmanuel G Quiroz 
  * 10-1-21
  * String.h
- * 
  * String class definition
- * 
- * *******************************************************************************************/
+ ********************************************************************************************/
 
 #ifndef STRING_H
 #define STRING_H
@@ -30,7 +28,7 @@ public:
     String & operator=(const String &); // copy assignment
     String & operator=(String &&);      // move assignment
     String & operator+=(const String &);
-    String operator-(const String &);
+    String & operator-(const String &);
     String substr(unsigned) const;
     String substr(unsigned, unsigned) const;
 
